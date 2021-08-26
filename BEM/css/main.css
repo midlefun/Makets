@@ -1,0 +1,9 @@
+body{
+  font-family: lato;
+}
+
+.title{
+  text-transform: uppercase;
+  font-size: 34px;
+  letter-spacing: 8.95px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+
+<!-- Блок-->
+    <div class="title">
+
+    </div> блок
+    <form class="search-form" action="index.html" method="post">
+
+    </form>Блок
+БЛоки можно вкладывать друг в друга
+Блокам не желательно задавть отступы и внешнюю геометрию
+<div class="about">
+  <div class="title">
+    <div class="subtitle">
+
+    </div>
+  </div>
+</div>
+
+<!-- элемент -->
+
+
+    <nav class="menu"> БЛОК
+      <a class="menu__item" href="#"></a> элемент блока меню
+      <a class="menu__item" href="#"></a> элемент блока меню
+      <a class="menu__item" href="#"></a> элемент блока меню
+      <a class="menu__item" href="#"></a> элемент блока меню
+    </nav>
+
+Элементы можно вкладывать друг в друга
+Допустима любая вложенность элементов
+Элемент ВСЕГДА часть блоков, а не другого элемента
+<!-- Правильная вложенность -->
+<div class="row">блок
+  <div class="row__column"> элемент
+    <div class="row__item"> элемент
+
+    </div>
+  </div>
+</div>
+
+<!-- НЕ Правильная вложенность -->
+<div class="row">блок
+  <div class="row__column"> элемент
+    <div class="row__column__item">
+
+    </div>
+  </div>
+</div>
+
+Элемент всегда должен быть частью блока
+
+
+
+  </body>
+</html>
