@@ -145,6 +145,7 @@ h1 {
 
 .product__equipment__content{
   padding-left: 20px;
+  display: block;
 }
 
 .cart-btn {
@@ -160,6 +161,33 @@ h1 {
 
 .cart-btn:hover {
   background-color: #64af3d;
+}
+
+.cart_quantity_button{
+  display: inline-block;
+}
+
+.cart_quantity_button a {
+  background: #f0f0e9;
+  color: #696763;
+  display: inline-block;
+  font-size: 16px;
+  height: 28px;
+  overflow: hidden;
+  text-align: center;
+  width: 35px;
+  float: left;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.cart_quantity_input {
+  height: 24px;
+  color: #696763;
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  font-family: roboto, sans-serif;
 }
 
 /* Responsive */
