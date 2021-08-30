@@ -19,18 +19,26 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 15px;
-  display: flex;
+  display: grid;
+  grid-template-areas: "left-column product-description"
+                 "left-column product-price"
+                 "left-column color-choose"
+                 "left-column shoose-config-list"
+                 "left-column product__equipment__content";
+
+
 }
 
 .left-column {
-  width: 65%;
+  grid-area: left-column;
+  /* width: 65%; */
   position: relative;
   margin-right: 20px;
   display: grid;
 }
 
 .right-column {
-  width: 35%;
+  /* width: 35%; */
 }
 
 .left-column img {
@@ -49,6 +57,10 @@ h1 {
   opacity: 1;
 }
 
+.product-description{
+  grid-area: product-description;
+}
+
 .product-description h1 {
   font-weight: 300;
   font-size: 52px;
@@ -63,6 +75,9 @@ h1 {
   line-height: 24px;
 }
 
+.product-price {
+  grid-area: product-price
+}
 .product-price p{
   margin: 0;
 }
@@ -73,6 +88,7 @@ h1 {
 }
 
 .color-choose{
+  grid-are: color-choose;
   padding: 20px;
 }
 
@@ -114,6 +130,7 @@ h1 {
 }
 
 .shoose-config-list {
+  grid-area: shoose-config-list;
   padding: 0 20px;
 }
 
@@ -146,6 +163,7 @@ h1 {
 .product__equipment__content{
   padding-left: 20px;
   display: block;
+  grid-area: product__equipment__content;
 }
 
 .cart-btn {
@@ -193,13 +211,20 @@ h1 {
 /* Responsive */
 @media (max-width: 940px) {
   .container {
-    flex-direction: column;
+    /* display: none; */
+    grid-template-areas: "product-description"
+                    "left-column "
+                    "product-price"
+                    "color-choose"
+                    "shoose-config-list"
+                    "product__equipment__content";
+    /* flex-direction: column; */
     /* margin-top: 60px; */
   }
 
   .left-column,
   .right-column {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .left-column img {
