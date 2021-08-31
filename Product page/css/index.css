@@ -19,24 +19,37 @@ h1 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 15px;
-  display: flex;
+  display: grid;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-areas: "images_1 product-description"
+                       "images_1 product-price"
+                       "images_1 color-choose"
+                       "shoose-config product__equipment__content"; */
+
+
 }
 
 .left-column {
-  width: 65%;
+  /* grid-area: left-column; */
+  /* width: 65%; */
   position: relative;
   margin-right: 20px;
   display: grid;
 }
 
 .right-column {
-  width: 35%;
+  /* width: 35%; */
 }
 
-.left-column img {
-   width: 100%;
-   grid-column: 1;
-   grid-row: 1;
+.images{
+  grid-area: images_1;
+
+}
+
+.images img {
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
   position: relative;
   left: 0;
   top: 0;
@@ -45,8 +58,47 @@ h1 {
   border: 2px #eee;
 }
 
-.left-column .active {
+.left-column .images .active {
   opacity: 1;
+}
+
+.shoose-config{
+  /* grid-area: shoose-config; */
+}
+
+.shoose-config-list {
+  padding: 0 20px;
+
+}
+
+.dotted {
+  padding: 0;
+  list-style: none;
+  font-family: 'Marck Script', cursive;
+}
+.dotted li {
+  margin-bottom: 5px;
+  border-bottom: 2px #404B51 dotted;
+  font-size: 14px;
+  /* line-height: 1; */
+}
+.dotted li span:nth-child(odd) {
+  padding-right: 6px;
+  color: #404B51;
+}
+.dotted li span:nth-child(even) {
+  float: right;
+  padding-left: 6px;
+  color: #35D1CE;
+}
+.dotted span {
+  background: white;
+  position: relative;
+  bottom: -7px;
+}
+
+.product-description{
+  grid-area: product-description;
 }
 
 .product-description h1 {
@@ -63,6 +115,9 @@ h1 {
   line-height: 24px;
 }
 
+.product-price {
+  grid-area: product-price
+}
 .product-price p{
   margin: 0;
 }
@@ -73,6 +128,7 @@ h1 {
 }
 
 .color-choose{
+  grid-area: color-choose;
   padding: 20px;
 }
 
@@ -113,39 +169,11 @@ h1 {
   background-position: center;
 }
 
-.shoose-config-list {
-  padding: 0 20px;
-}
-
-.dotted {
-  padding: 0;
-  list-style: none;
-  font-family: 'Marck Script', cursive;
-}
-.dotted li {
-  margin-bottom: 5px;
-  border-bottom: 2px #404B51 dotted;
-  font-size: 14px;
-  /* line-height: 1; */
-}
-.dotted li span:nth-child(odd) {
-  padding-right: 6px;
-  color: #404B51;
-}
-.dotted li span:nth-child(even) {
-  float: right;
-  padding-left: 6px;
-  color: #35D1CE;
-}
-.dotted span {
-  background: white;
-  position: relative;
-  bottom: -7px;
-}
 
 .product__equipment__content{
   padding-left: 20px;
   display: block;
+  grid-area: product__equipment__content;
 }
 
 .cart-btn {
@@ -193,13 +221,17 @@ h1 {
 /* Responsive */
 @media (max-width: 940px) {
   .container {
-    flex-direction: column;
-    /* margin-top: 60px; */
+  /* grid-template-areas:
+                  'images'
+                 "product-price"
+                 "color-choose"
+                 "shoose-config"
+                 "product__equipment__content"; */
   }
 
   .left-column,
   .right-column {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .left-column img {
