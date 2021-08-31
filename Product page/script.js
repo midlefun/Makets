@@ -12,23 +12,24 @@ $(document).ready(function() {
 
 });
 
-let ul = $('.shoose-config-list');
-let height = $('.shoose-config-list').height();
-$('.button_hide').on('click', function() {
+// console.log(ul.css('height'));
 
-    console.log(height);
+let ul = $('.dotted');
+let height = $('.dotted').height();
+document.querySelector('.dotted').style.height = '60px';
+$('.button_hide span').on('click', function() {
     if (ul.css('height') == '60px') {
-      $(this).text('Hide');
+      $(this).text('Скрыть ↑');
       ul.animate({
         height: height + "px"
       }, 300);
-      console.log(height);
 
     } else {
-      $(this).text('Show');
+      $(this).text('Показать все ↓');
       ul.animate({
         height: "60px"
       }, 300);
+
     }
   })
 
