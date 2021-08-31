@@ -12,6 +12,26 @@ $(document).ready(function() {
 
 });
 
+let ul = $('.shoose-config-list');
+let height = $('.shoose-config-list').height();
+$('.button_hide').on('click', function() {
+
+    console.log(height);
+    if (ul.css('height') == '60px') {
+      $(this).text('Hide');
+      ul.animate({
+        height: height + "px"
+      }, 300);
+      console.log(height);
+
+    } else {
+      $(this).text('Show');
+      ul.animate({
+        height: "60px"
+      }, 300);
+    }
+  })
+
 window.onload = function() {
   const minus = document.querySelector('.cart_quantity_down');
   const plus = document.querySelector('.cart_quantity_up');
