@@ -54,14 +54,16 @@
   font-weight: 900;
   color: #e6e6e6;
   border-right: 1px solid #e5e5e5;
+  transition: border .2s, background .2s, color .2s;
 }
 
 .catalog-nav__btn.is-active{
   background: #1f1f1f;
   color:#fff;
+  border-color: #1f1f1f;
 }
 
-.catalog-nav__btn:hover {
+.catalog-nav__btn:not(.is-active):hover {
   background: #ffa650;
   color:#fff;
   border-right-color: #ffa650;
@@ -69,4 +71,38 @@
 
 .catalog-nav__item:last-of-type .catalog-nav__btn{
   border-right: 0;
+}
+
+@media (max-width: 764px) {
+  .catalog-nav {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .catalog-nav__wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .catalog-nav__item {
+    width: 50%;
+    flex-grow: 1;
+  }
+
+  .catalog-nav__btn {
+    min-width: 0;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .catalog-nav__item:nth-of-type(1) .catalog-nav__btn,
+  .catalog-nav__item:nth-of-type(2) .catalog-nav__btn{
+    border-top: 0;
+  }
+
+  .catalog-nav__item:nth-of-type(even) .catalog-nav__btn{
+    border-right: 0;
+  }
 }
