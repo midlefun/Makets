@@ -11,7 +11,7 @@
 <body>
   <section class="section section-catalog">
     <div class="container">
-      <header class="section__header">
+      <!-- <header class="section__header">
         <h2 class="section__title section__title--accent">
           Список
         </h2>
@@ -31,104 +31,134 @@
             </li>
           </ul>
         </nav>
-      </header>
+      </header> -->
+      <div class="form-control">
+        <div class="form-control__filter">
+          <button type="button" name="button">фильтер</button>
+        </div>
+        <div class="form-control__sort">
 
+          <div class="select-box">
+            <label for="select-box1" class="label select-box1"><span class="label-desc">Сортировать по</span> </label>
+            <select id="select-box1" class="select">
+              <option value="Choice 1">Новые поступления</option>
+              <option value="Choice 2">Цена по убыванию</option>
+              <option value="Choice 3">Цена по возрастани</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
       <div class="catalog">
-          <!-- <div class="catalog__navigation">
+        <div class="catalog__navigation">
+          <nav class="catalog__list">
+            <ul>
+              <li>летнее</li>
+              <li>летнее</li>
+              <li>летнее</li>
+              <li>летнее</li>
+            </ul>
+          </nav>
+        </div>
 
-          </div> -->
-         <div class="catalog__item">
-           <div class="product catalog__product">
-             <img src="../Photos/Section-catalog/1.jpg" alt="" class="product__img">
-             <div class="product__content">
-               <h3 class="product__title"><a class="product__title--href" href="#">Сапоги</a></h3>
-               <p class="product__descriprion"></p>
-             </div>
-             <footer class="product__footer">
-               <div class="product__sizes">
-                 <button class="product__size" type="button">-</button>
-                 <input type="text" name="" id="" class="product__size product__size--input" value="0">
-                 <button class="product__size" type="button">+</button>
-               </div>
-               <div class="product__bottom">
-                 <div class="product__price">
-                   <span class="product__price-value">650</span>
-                   <span class="product__currency">&#8381;</span>
-                 </div>
-                 <button class="btn product__btn" type="button">В корзину</button>
-               </div>
-             </footer>
-           </div>
-         </div>
-         <div class="catalog__item">
-           <div class="product catalog__product">
-             <img src="../Photos/Section-catalog/2.jpg" alt="" class="product__img">
-             <div class="product__content">
-               <h3 class="product__title"><a class="product__title--href" href="#">Сапоги</a></h3>
-               <p class="product__descriprion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repellat quia, voluptate dignissimos animi quae quaerat reiciendis sit deserunt vero, reprehenderit autem architecto. Ex, culpa officiis labore, expedita, sint quidem officia fugiat beatae ea, quis ab. Sequi dolores alias sit.</p>
-             </div>
-             <footer class="product__footer">
-               <div class="product__sizes">
-                 <button class="product__size" type="button">-</button>
-                 <input type="text" name="" id="" class="product__size product__size--input" value="0">
-                 <button class="product__size" type="button">+</button>
-               </div>
-               <div class="product__bottom">
-                 <div class="product__price">
-                   <span class="product__price-value">650</span>
-                   <span class="product__currency">&#8381;</span>
-                 </div>
-                 <button class="btn product__btn" type="button">В корзину</button>
-               </div>
-             </footer>
-           </div>
-         </div>
-         <div class="catalog__item">
-           <div class="product catalog__product">
-             <img src="../Photos/Section-catalog/3.jpg" alt="" class="product__img">
-             <div class="product__content">
-               <h3 class="product__title"><a class="product__title--href" href="#">Сапоги</a></h3>
-               <p class="product__descriprion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, laudantium?</p>
-             </div>
-             <footer class="product__footer">
-               <div class="product__sizes">
-                 <button class="product__size" type="button">-</button>
-                 <input type="text" name="" id="" class="product__size product__size--input" value="0">
-                 <button class="product__size" type="button">+</button>
-               </div>
-               <div class="product__bottom">
-                 <div class="product__price">
-                   <span class="product__price-value">650</span>
-                   <span class="product__currency">&#8381;</span>
-                 </div>
-                 <button class="btn product__btn" type="button">В корзину</button>
-               </div>
-             </footer>
-           </div>
-         </div>
-         <div class="catalog__item">
-           <div class="product catalog__product">
-             <img src="../Photos/Section-catalog/4.jpg" alt="" class="product__img">
-             <div class="product__content">
-               <h3 class="product__title"><a class="product__title--href" href="#">Сапоги1</a></h3>
-               <p class="product__descriprion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, laudantium?</p>
-             </div>
-             <footer class="product__footer">
-               <div class="product__sizes">
-                 <button class="product__size" type="button">-</button>
-                 <input type="text" name="" id="" class="product__size product__size--input" value="0">
-                 <button class="product__size" type="button">+</button>
-               </div>
-               <div class="product__bottom">
-                 <div class="product__price">
-                   <span class="product__price-value">650</span>
-                   <span class="product__currency">&#8381;</span>
-                 </div>
-                 <button class="btn product__btn" type="button">В корзину</button>
-               </div>
-             </footer>
-           </div>
-         </div>
+        <div class="catalog__сollection">
+
+
+          <div class="catalog__item">
+            <div class="product catalog__product">
+              <img src="../Photos/Section-catalog/1.jpg" alt="" class="product__img">
+              <div class="product__content">
+                <h3 class="product__title"><a class="product__title--href" href="#">Сапоги</a></h3>
+                <p class="product__descriprion"></p>
+              </div>
+              <footer class="product__footer">
+                <div class="product__sizes">
+                  <button class="product__size" type="button">-</button>
+                  <input type="text" name="" id="" class="product__input" value="0">
+                  <button class="product__size" type="button">+</button>
+                </div>
+                <div class="product__bottom">
+                  <div class="product__price">
+                    <span class="product__price-value">650</span>
+                    <span class="product__currency">&#8381;</span>
+                  </div>
+                  <button class="btn product__btn" type="button">В корзину</button>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <div class="catalog__item">
+            <div class="product catalog__product">
+              <img src="../Photos/Section-catalog/2.jpg" alt="" class="product__img">
+              <div class="product__content">
+                <h3 class="product__title"><a class="product__title--href" href="#">Сапоги</a></h3>
+                <p class="product__descriprion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, repellat quia, voluptate dignissimos animi quae quaerat reiciendis sit deserunt vero, reprehenderit autem architecto. Ex, culpa
+                  officiis labore, expedita, sint quidem officia fugiat beatae ea, quis ab. Sequi dolores alias sit.</p>
+              </div>
+              <footer class="product__footer">
+                <div class="product__sizes">
+                  <button class="product__size" type="button">-</button>
+                  <input type="text" name="" id="" class="product__input" value="0">
+                  <button class="product__size" type="button">+</button>
+                </div>
+                <div class="product__bottom">
+                  <div class="product__price">
+                    <span class="product__price-value">650</span>
+                    <span class="product__currency">&#8381;</span>
+                  </div>
+                  <button class="btn product__btn" type="button">В корзину</button>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <div class="catalog__item">
+            <div class="product catalog__product">
+              <img src="../Photos/Section-catalog/3.jpg" alt="" class="product__img">
+              <div class="product__content">
+                <h3 class="product__title"><a class="product__title--href" href="#">Сапоги</a></h3>
+                <p class="product__descriprion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, laudantium?</p>
+              </div>
+              <footer class="product__footer">
+                <div class="product__sizes">
+                  <button class="product__size" type="button">-</button>
+                  <input type="text" name="" id="" class="product__input" value="0">
+                  <button class="product__size" type="button">+</button>
+                </div>
+                <div class="product__bottom">
+                  <div class="product__price">
+                    <span class="product__price-value">650</span>
+                    <span class="product__currency">&#8381;</span>
+                  </div>
+                  <button class="btn product__btn" type="button">В корзину</button>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <div class="catalog__item">
+            <div class="product catalog__product">
+              <img src="../Photos/Section-catalog/4.jpg" alt="" class="product__img">
+              <div class="product__content">
+                <h3 class="product__title"><a class="product__title--href" href="#">Сапоги1</a></h3>
+                <p class="product__descriprion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, laudantium?</p>
+              </div>
+              <footer class="product__footer">
+                <div class="product__sizes">
+                  <button class="product__size" type="button">-</button>
+                  <input type="text" name="" id="" class="product__input" value="0">
+                  <button class="product__size" type="button">+</button>
+                </div>
+                <div class="product__bottom">
+                  <div class="product__price">
+                    <span class="product__price-value">650</span>
+                    <span class="product__currency">&#8381;</span>
+                  </div>
+                  <button class="btn product__btn" type="button">В корзину</button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 

@@ -17,7 +17,7 @@ img{
 
 .container{
   padding: 0 20px;
-  width: 1200px;
+  /* width: 1200px; */
   max-width: 100%;
   margin: 0 auto;
 }
@@ -26,7 +26,7 @@ img{
   padding: 110px 0;
 }
 
-@ @media (max-width: 576px) {
+/* @ @media (max-width: 576px) {
   .section {
     padding: 90px 0;
   }
@@ -134,13 +134,107 @@ img{
   .catalog-nav__item:nth-of-type(even) .catalog-nav__btn{
     border-right: 0;
   }
+} */
+
+
+
+.form-control{
+  display: flex;
+  justify-content: space-between;
+
 }
 
+.form-control__filter{
+
+}
+
+@media(min-width: 769px){
+  .form-control__filter{
+    visibility: hidden;;
+  }
+}
+
+.form-control__sort{
+  padding: 0 0 20px 10px;
+}
+
+.select-box {
+  cursor: pointer;
+  position : relative;
+  width: 200px;
+}
+
+.select,
+.label {
+  color: #414141;
+  display: block;
+  font: 400 17px/2em 'Source Sans Pro', sans-serif;
+}
+
+.select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 5px 0;
+  height: 40px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  background: none transparent;
+  border: 0 none;
+}
+.select-box1 {
+  background: #ececec;
+}
+
+.label {
+  position: relative;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.open .label::after {
+   content: "▲";
+}
+.label::after {
+  content: "▼";
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 15px;
+  border-left: 5px solid #fff;
+}
 
 .catalog{
   display: flex;
+  /* flex-wrap: wrap; */
+  /* margin: 0 -35px; */
+  align-items: flex-start;
+}
+
+.catalog__navigation{
+  width: 200px;
+  padding: 0 50px 0 0;
+  background-color: #f7f7f7;
+  width: 15%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .catalog__navigation{
+    display: none;
+  }
+}
+
+.catalog__сollection{
+  display: flex;
   flex-wrap: wrap;
-  margin: 0 -35px;
+  width: 85%;
+}
+
+@media (max-width: 768px) {
+  .catalog__сollection{
+    width: 100%;
+  }
 }
 
 .catalog__item{
@@ -273,9 +367,18 @@ img{
   padding: 15px 28px;
 }
 
-.product__size--input{
+.product__input{
+  border: 0;
   border-left: 2px solid #ededed;
   border-right: 2px solid #ededed;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  color: #d5d4d4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
 .product__price{
