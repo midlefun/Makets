@@ -6,6 +6,7 @@
   <title></title>
   <link rel="stylesheet" href="./css/catalog-style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="catalog-function.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -52,12 +53,85 @@
       <div class="catalog">
         <div class="catalog__navigation">
           <nav class="catalog__list">
-            <ul>
-              <li>летнее</li>
-              <li>летнее</li>
-              <li>летнее</li>
-              <li>летнее</li>
-            </ul>
+              <div class="...">
+                <div class="sidebar__title">
+                  <h2>Фильтры</h2>
+                </div>
+                <ul class="sidebar__content">
+                  <li class="">
+                    <div class="filter__panel">
+                      <p class="filter__panel--text">Пол</p>
+                    </div>
+                  </li>
+                  <li class="menu-parent-item">
+                    <div class="filter__panel">
+                      <p class="filter__panel--text">Сезон<i class="pointer"></i></p>
+                    </div>
+                    <ul class="sub-menu">
+                      <li>
+                        <label for="">
+                          <input type="checkbox">
+                          <span>Летнее</span>
+                        </label>
+                      </li>
+                      <li>
+                      <label for="">
+                        <input type="checkbox">
+                        <span>Зимнее</span>
+                      </label>
+                      </li>
+                      <li>
+                      <label for="">
+                        <input type="checkbox">
+                        <span>Демисизонные</span>
+                      </label>
+                      </li>
+                      <li>
+                      <label for="">
+                        <input type="checkbox">
+                        <span>Всесезонное</span>
+                      </label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-parent-item">
+                    <div class="filter__panel">
+                      <p class="filter__panel--text">Фасон<i class="pointer"></i></p>
+                    </div>
+                      <ul class="sub-menu">
+                        <li>
+                          <label for="">
+                            <input type="checkbox">
+                            <span>Кроссовки</span>
+                          </label>
+                        </li>
+                        <li>
+                        <label for="">
+                          <input type="checkbox">
+                          <span>Сапоги</span>
+                        </label>
+                        </li>
+                        <li>
+                        <label for="">
+                          <input type="checkbox">
+                          <span>Галоши</span>
+                        </label>
+                        </li>
+                        <li>
+                        <label for="">
+                          <input type="checkbox">
+                          <span>Тапочки</span>
+                        </label>
+                        </li>
+                      </ul>
+                  </li>
+                  <li>
+                    <div class="filter__panel">
+                      <p class="filter__panel--text">Ценновой диапозон</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
           </nav>
         </div>
 
