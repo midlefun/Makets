@@ -40,8 +40,8 @@
         <div class="form-control__sort">
 
           <div class="select-box">
-            <label for="select-box1" class="label select-box1"><span class="label-desc">Сортировать по</span> </label>
-            <select id="select-box1" class="select">
+            <label for="select-box1" class="label select-box1"><span class="select-box--text">Сортировать по</span> </label>
+            <select id="select-box1" class="select-box1_select">
               <option value="Choice 1">Новые поступления</option>
               <option value="Choice 2">Цена по убыванию</option>
               <option value="Choice 3">Цена по возрастани</option>
@@ -51,87 +51,87 @@
         </div>
       </div>
       <div class="catalog">
-        <div class="catalog__navigation">
-          <nav class="catalog__list">
-              <div class="...">
-                <div class="sidebar__title">
+        <div class="catalog-filter">
+          <nav class="catalog-filter__content">
+                <div class="filter__title">
                   <h2>Фильтры</h2>
                 </div>
-                <ul class="sidebar__content">
-                  <li class="">
+                <div></div>
+                <ul class="filter__list">
+                  <li class="filter__element">
                     <div class="filter__panel">
                       <p class="filter__panel--text">Пол</p>
                     </div>
                   </li>
-                  <li class="menu-parent-item">
+                  <li class="filter__element filter-parent-item">
                     <div class="filter__panel">
+                      <div class=""></div>
                       <p class="filter__panel--text">Сезон<i class="pointer"></i></p>
                     </div>
-                    <ul class="sub-menu">
-                      <li>
-                        <label for="">
-                          <input type="checkbox">
-                          <span>Летнее</span>
+                    <ul class="sub-filter">
+                      <li class="sub-filter__element" >
+                        <label for="" class='sub-filter__element--label'>
+                          <input type="checkbox" class='sub-filter__element--checkbox'  id="summer">
+                          <span class='sub-filter__element--text'>Летнее</span>
                         </label>
                       </li>
-                      <li>
-                      <label for="">
-                        <input type="checkbox">
-                        <span>Зимнее</span>
+                      <li class="sub-filter__element">
+                      <label for="" class='sub-filter__element--label'>
+                        <input type="checkbox" class='sub-filter__element--checkbox' >
+                        <span class='sub-filter__element--text'>Зимнее</span>
                       </label>
                       </li>
-                      <li>
-                      <label for="">
-                        <input type="checkbox">
-                        <span>Демисизонные</span>
+                      <li class="sub-filter__element">
+                      <label for="" class='sub-filter__element--label'>
+                        <input type="checkbox" class='sub-filter__element--checkbox' >
+                        <span class='sub-filter__element--text'>Демисизонные</span>
                       </label>
                       </li>
-                      <li>
-                      <label for="">
-                        <input type="checkbox">
-                        <span>Всесезонное</span>
+                      <li class="sub-filter__element">
+                      <label for="" class='sub-filter__element--label'>
+                        <input type="checkbox" class='sub-filter__element--checkbox' >
+                        <span class='sub-filter__element--text'>Всесезонное</span>
                       </label>
                       </li>
                     </ul>
                   </li>
-                  <li class="menu-parent-item">
+                  <li class="filter__element filter-parent-item">
                     <div class="filter__panel">
                       <p class="filter__panel--text">Фасон<i class="pointer"></i></p>
                     </div>
-                      <ul class="sub-menu">
-                        <li>
-                          <label for="">
-                            <input type="checkbox">
-                            <span>Кроссовки</span>
+                      <ul class="sub-filter">
+                        <li class="sub-filter__element">
+                          <label for="" class='sub-filter__element--label'>
+                            <input type="checkbox" class='sub-filter__element--checkbox' >
+                            <span class='sub-filter__element--text'>Кроссовки</span>
                           </label>
                         </li>
-                        <li>
-                        <label for="">
-                          <input type="checkbox">
-                          <span>Сапоги</span>
+                        <li class="sub-filter__element">
+                        <label for="" class='sub-filter__element--label'>
+                          <input type="checkbox" class='sub-filter__element--checkbox' >
+                          <span class='sub-filter__element--text'>Сапоги</span>
                         </label>
                         </li>
-                        <li>
-                        <label for="">
-                          <input type="checkbox">
-                          <span>Галоши</span>
+                        <li class="sub-filter__element">
+                        <label for="" class='sub-filter__element--label'>
+                          <input type="checkbox" class='sub-filter__element--checkbox' >
+                          <span class='sub-filter__element--text'>Галоши</span>
                         </label>
                         </li>
-                        <li>
-                        <label for="">
-                          <input type="checkbox">
-                          <span>Тапочки</span>
+                        <li class="sub-filter__element">
+                        <label for="" class='sub-filter__element--label'>
+                          <input type="checkbox" class='sub-filter__element--checkbox' >
+                          <span class='sub-filter__element--text'>Тапочки</span>
                         </label>
                         </li>
                       </ul>
                   </li>
-                  <li>
+                  <li class="filter__element">
                     <div class="filter__panel">
                       <p class="filter__panel--text">Ценновой диапозон</p>
                     </div>
                   </li>
                 </ul>
-              </div>
           </nav>
         </div>
 
