@@ -12,15 +12,28 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  const myLabel = function() {
-    let myChecbox = this.querySelector('label input')
-    if (!myChecbox.checked){
-      myChecbox.checked = true
-    } else {
-      myChecbox.checked = false
-    }
-}
-  for (i = 0; i< label.length; i++){
-    label[i].addEventListener('click', myLabel, false)
-  }
+//   const myLabel = function() {
+//     let myChecbox = this.querySelector('label input')
+//
+//     if (myChecbox.checked){
+//         myChecbox.checked = false
+//         console.log(myChecbox)
+//     } else if(!myChecbox.checked) {
+//         myChecbox.checked = true
+//         console.log(myChecbox)
+//     }
+//
+//     // if (!myChecbox.checked){
+//     //   myChecbox.checked = true
+//     //   console.log('поставил')
+//     // } else {
+//     //   myChecbox.checked = false
+//     //   console.log('снял')
+//     // }
+//
+//
+// }
+//   for (i = 0; i< label.length; i++){
+//     label[i].addEventListener('click', myLabel, false)
+//   }
 });

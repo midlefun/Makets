@@ -215,7 +215,7 @@ img{
   width: 200px;
   padding: 0 15px;
   background-color: #f7f7f7;
-  width: 25%;
+  width: 20%;
   margin: 0 20px 0 0;
   /* text-align: center; */
 }
@@ -279,6 +279,7 @@ img{
 .sub-filter__element {
   line-height: 42px;
   border-top: none;
+  display: flex;
 }
 
 .sub-filter__element a
@@ -286,6 +287,7 @@ img{
   font-size: 17px;
   color: #333;
   text-decoration: none;
+  flex-grow: 1;
 }
 input{
   margin:0;
@@ -443,17 +445,18 @@ input:checked+span{
 }
 
 .product__content{
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   flex-grow: 1;
 }
 
 .product__sizes {
   display: flex;
-  margin-bottom: 30px;
+  margin: 0 30px 30px 30px;
   border-radius: 21px;
   overflow: hidden;
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
-  justify-content: space-between;
+  justify-content: space-evenly;
+  border: 1px solid #d5d4d4;
 }
 
 .product__size{
@@ -465,7 +468,10 @@ input:checked+span{
   color: #d5d4d4;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  padding: 15px 28px;
+  padding: 10px 15px;
+  flex-grow: 2;
+  font-size: 20px;
+  width: 33%;
 }
 
 .product__input{
@@ -480,6 +486,8 @@ input:checked+span{
   color: #d5d4d4;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
+  flex-grow: 3;
+  width: 33%;
 }
 
 .product__price{
@@ -533,7 +541,7 @@ input:checked+span{
 .product__btn{
   box-shadow: none;
   background: #ffa650;
-  width: 200px;
+  width: 150px;
   padding: 14px 20px;
 }
 
